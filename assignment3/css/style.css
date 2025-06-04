@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  background: #3a3939;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidee {
+  display: none;
+}
+
+.new {
+  border-radius: 8px;
+  background: #141414;
+  width: 350px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+form h1 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+  margin-top: 0px;
+}
+form input::-moz-placeholder {
+  color: #414141;
+}
+form input::placeholder {
+  color: #414141;
+}
+form .t1 {
+  color: rgba(255, 255, 255, 0.8156862745);
+  font-size: 15px;
+}
+form input {
+  background: rgba(255, 255, 255, 0.4705882353);
+  color: #141414;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.5px solid #575959;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 7px 10px;
+  border-radius: 0.5rex;
+}
+form input:focus {
+  background: #575959;
+  border: 3px solid rgba(255, 255, 255, 0.4705882353);
+  color: rgba(255, 255, 255, 0.8156862745);
+}
+form #btn {
+  background: rgba(255, 255, 255, 0.4705882353);
+  color: #141414;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.5px solid #575959;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 7px 10px;
+  border-radius: 0.5rex;
+  color: #141414;
+  background: #ffffff;
+  margin-top: 27px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+form #btn:hover {
+  background: #575959;
+  transition: all ease 0.5s;
+  color: white;
+}
+
+#message_mail, #message_pass, #message_name, #message_phone, #message_mail2 {
+  display: none;
+  font-size: 10px;
+  text-align: end;
+  margin: -7px;
+  margin-right: 0;
+  color: #b70505;
+}
+
+input.error {
+  border: 2px solid #a40a0a;
+}
+
+.full1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top1 {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.new1 {
+  border-radius: 8px;
+  background: #141414;
+  width: 350px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.form1 .line {
+  color: rgba(255, 255, 255, 0.4705882353);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+  margin-top: 10px;
+}
+.form1 .line hr {
+  margin: 0;
+  width: 98px;
+  height: 1px;
+  border: none;
+  background: #575959;
+}
+.form1 .line #mid {
+  padding: 0px 6px;
+  font-size: 14px;
+}
+.form1 h1 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: -20px;
+}
+.form1 #t1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4705882353);
+  font-size: 12px;
+  margin: 12px;
+}
+.form1 #t2 {
+  color: rgba(255, 255, 255, 0.8156862745);
+  font-size: 13px;
+}
+.form1 #t3 {
+  font-size: 13px;
+  color: #ffffff;
+}
+.form1 #t4 {
+  font-size: 11px;
+  color: whitesmoke;
+}
+.form1 #ee {
+  margin-bottom: 22px;
+}
+.form1 #image {
+  width: 5%;
+}
+.form1 .writeabt {
+  margin-left: 5px;
+}
+.form1 button {
+  background: rgba(255, 255, 255, 0.4705882353);
+  color: #141414;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.5px solid #575959;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 7px 10px;
+  border-radius: 0.5rex;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form1 button:hover {
+  background: #575959;
+  transition: all ease 0.5s;
+  color: white;
+}
+.form1input {
+  background: rgba(255, 255, 255, 0.4705882353);
+  color: #141414;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.5px solid #575959;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 7px 10px;
+  border-radius: 0.5rex;
+}
+.form1input:focus {
+  background: #000;
+  border: 2px solid red;
+  color: black;
+}
+.form1 .pass {
+  color: rgba(255, 255, 255, 0.8156862745);
+  display: flex;
+  justify-content: space-between;
+}
+.form1 a {
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 0.8156862745);
+}
+.form1 #but {
+  color: #141414;
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.form1 #but:hover {
+  background: #575959;
+  transition: all ease 0.5s;
+  color: white;
+}
+
+.end {
+  font-size: 12px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.4705882353);
+  text-align: center;
+}
+.end a {
+  color: rgba(255, 255, 255, 0.4705882353);
+}
+
+#registerBtn {
+  background: #575959;
+  color: #ffffff;
+  padding: -10px;
+}
+
+.last {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8156862745);
+  font-size: 13px;
+  margin-bottom: -20px;
+}
+
+#signup {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  background: #575959;
+  color: #ffffff;
+}
+
+.now {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+
+h2 {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.textboxx1, .textboxx2 {
+  background: rgba(255, 255, 255, 0.4705882353);
+  height: 35px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.full2 {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

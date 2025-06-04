@@ -1,0 +1,273 @@
+@import "colors";
+@mixin hov{
+    &:hover {
+            background: $dgrey;
+            transition: all ease 0.5s;
+            color:white;
+        }
+    }
+@mixin shape{
+    background: $grey;
+        color:$dark;
+        box-sizing: border-box;
+        width:100%;
+        border: 1.5px solid $dgrey;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        padding: 7px 10px;
+        border-radius: 0.5rex;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+body{
+    background:#3a3939;
+    font-family: sans-serif;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#first{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    width:100%;
+}
+.full{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hidee{
+    display:none;
+}
+.new{
+    border-radius: 8px;
+    background: $dark;
+    width:350px;
+    padding:40px 20px;
+    box-sizing: border-box;
+    
+}
+form{
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        // margin-top: -20px;
+        margin:15px;
+        margin-top: 0px;
+    }
+   input::placeholder {
+  color: #414141; 
+}
+
+    .t1{
+        color:$light;
+        font-size: 15px;
+    }
+    input{
+        @include shape;
+        &:focus{
+            background: $dgrey;
+            border: 3px solid $grey;
+            color:$light;
+            
+        }
+    }
+    #btn{
+        
+        @include hov;
+        @include shape;
+        color:$dark;
+        background: #ffffff;
+        margin-top:27px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+#message_mail, #message_pass, #message_name, #message_phone, #message_mail2{
+    display: none;
+    font-size: 10px;
+    text-align: end;
+    margin:-7px;
+    margin-right:0;
+    color: #b70505;
+}
+input.error {
+    border: 2px solid #a40a0a;
+}
+
+@mixin flcent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.full1{
+    margin-top:40px;
+    @include flcent;
+    flex-direction: column;
+    
+}
+.top1{
+    color:white;
+    font-size:13px;
+    text-align: center;
+    // margin-top:50px;
+    padding:10px;
+}
+.new1{
+    border-radius: 8px;
+    background: $dark;
+    width:350px;
+    padding:40px 20px;
+    box-sizing: border-box;
+}
+
+.form1{
+    .line{
+        hr{
+            margin:0;
+            width:98px;
+            height:1px;
+            border: none;  
+            background:$dgrey;
+        }
+        #mid{
+            padding:0px 6px;
+            font-size: 14px;
+        }
+        color:$grey;
+        @include flcent;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    #t1{
+        text-align: center;
+        color:$grey;
+        font-size: 12px;
+        margin:12px;
+    }
+    #t2{
+        color:$light;
+        font-size: 13px;
+    }
+    #t3{
+        font-size: 13px;
+        color: #ffffff;
+    }
+    #t4{
+        font-size: 11px;
+        color:whitesmoke;
+    }
+    #ee{
+        margin-bottom:22px;
+    }
+    #image{
+        width:5%;
+    }
+    .writeabt{
+        margin-left:5px;
+    }
+    button{
+        @include shape;
+        cursor: pointer;
+        @include hov;
+        @include flcent;
+    }
+    &input{
+        @include shape;
+        &:focus{
+            background: #000;
+            border: 2px solid red;
+            color:black;
+            
+        }
+    }
+    .pass{
+        color:$light;
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    a{
+        padding:0 4px;
+        color:$light;
+    }
+    #but{
+        color:$dark;
+        background: white;
+        @include hov;
+        margin-top:10px;
+        margin-bottom:15px;
+        cursor: pointer;
+    }
+    }
+    .end{
+        font-size: 12px;
+        padding:20px;
+        color:$grey;
+        text-align: center;
+        a{
+            color:$grey;
+        }
+
+    }
+
+    #registerBtn{
+        background: $dgrey;
+        color: #ffffff;
+        padding:-10px;
+        
+    }
+    .last{
+        text-align: center;
+        color:$light;
+        font-size: 13px;
+        margin-bottom: -20px;
+    }
+    #signup{
+        margin-top:30px;
+        width: 100%;
+        height: 40px;
+        background: $dgrey;
+        color: #ffffff;
+    }
+
+    .now{
+        display:grid;
+        grid-template-columns: auto auto;
+        gap:100px;
+    }
+    h2{
+        color:white;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .textboxx1,.textboxx2{
+        background: $grey;
+        height:35px;
+        margin:10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        padding:0 10px ;
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        color:white;
+    }
+
+    .full2{
+        display:none;
+    }
