@@ -10,20 +10,15 @@ $(document).ready(function () {
 ///////////////////////////////////////////////////
 
 
-$('#but').click(function () {
+$('#but').click(function (e) {
         const email = $('#ee').val(); 
         $('.textboxx1').text(email); 
         const password = $('.password').val(); 
         $('.textboxx2').text(password); 
-        // let classList = $('.full2').attr('class');
-        // alert('Your account details : ' +'.full2');
-        // alert('Your account details : ' + $('.textboxx1').text());
         const content = $('.full2').text();
         alert('Your account details : ' + content);
-      });
-
-
-                                                                                       
+        e.preventDefault();
+      });                                                                   
 ////////////////////////////////////////////////
   $('#btn').click(function () {
     $('.validate').each(function () {
