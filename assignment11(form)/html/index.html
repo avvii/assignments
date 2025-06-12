@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <link rel="stylesheet"
+        href="/resources/demos/style.css">
+</head> 
+<body>
+  <ol class="main">
+<div class="firstblock">
+  <div class="deliverymethod">
+    <li><p>Delivery Method</p></li>
+  </div>
+
+  <div class="have2hide1 hidden ">
+  <div class="border">
+    <div class="top-left">
+      <p class="shipping"><b>Shipping (1 item)</b></p>
+      <div class="secondline ">
+        <!-- <img class="truck" src="" > -->
+        <i class="fa-solid fa-truck"></i>
+        <p class="ship-to"><b>SHIPPING TO</b></p>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <img src="" class="myitem">
+    </div>
+
+    <form class="form1">
+    <!--  -->
+      <div class="line1 forflex">
+        <!-- <div class="req"> -->
+          <input type="text" placeholder="FIRST NAME *" id="first-name" class="blah" required>
+          <span class="error-message hidden">required field</span>
+          <!-- <p id="first-name-error" class="error-message hidden">required field</p> -->
+        <!-- </div> -->
+        <!-- <div class="req"> -->
+          <input type="text" placeholder="LAST NAME *" id="last-name" class="blah" required>
+          <span class="error-message hidden">required field</span>
+          <!-- <p id="last-name-error" class="error-message hidden">This field is required</p> -->
+        <!-- </div> -->
+      </div>
+    <!--  -->
+      <!-- <div class="req"> -->
+         <input type="text" placeholder="ADDRESS LINE 1 *" class="blah" required>
+         <span class="error-message hidden">required field</span>
+      <!-- </div> -->
+       <p class="show-address">+ Add Address Line 2</p>
+       <input type="text" placeholder="ADDRESS LINE 2 " class="hidden-address hidden">
+       <div class="line3 forflex">
+          <input type="text" placeholder="CITY *" required>
+          <span class="error-message hidden">required field</span>
+          <div class="custom-select" style="width:200px;">
+          <select id="state" name="STATE" class="state" required>
+            <span class="error-message"></span>
+            <option value="" disabled selected >STATE *</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+          <span class="error-message hidden">required field</span>
+        </div>
+      </div>
+
+      <div class="line4 forflex">
+          <input type="number" placeholder="ZIP CODE *" required>
+          <span class="error-message hidden">required field</span>
+          <div class="custom-select" style="width:200px;">
+          <select class="country" name="country" required>
+            <option value="" disabled selected>COUNTRY *</option>
+            <option value="Andhra Pradesh">Afghanistan</option>
+            <option value="Arunachal Pradesh">Albania</option>
+            <option value="Assam">Algeria</option>
+            <option value="Bihar">Angola and Barbuda</option>
+            <option value="Chhattisgarh">Australia</option>
+            <option value="Goa">Austria</option>
+            <option value="Gujarat">Bangladesh</option>
+            <option value="Haryana">Belgium</option>
+            <option value="Himachal Pradesh">Brazil</option>
+            <option value="Jharkhand"> Canada</option>
+            <option value="Karnataka">India</option>
+            <option value="Kerala">Korea</option>
+            <option value="Madhya Pradesh">Malaysia</option>
+            <option value="Andhra Pradesh">Afghanistan</option>
+            <option value="Arunachal Pradesh">Albania</option>
+            <option value="Assam">Algeria</option>
+            <option value="Bihar">Angola and Barbuda</option>
+            <option value="Chhattisgarh">Australia</option>
+            <option value="Goa">Austria</option>
+            <option value="Gujarat">Bangladesh</option>
+            <option value="Haryana">Belgium</option>
+            <option value="Himachal Pradesh">Brazil</option>
+            <option value="Jharkhand"> Canada</option>
+            <option value="Karnataka">India</option>
+            <option value="Kerala">Korea</option>
+            <option value="Madhya Pradesh">Malaysia</option>
+          </select>
+          <span class="error-message hidden">required field</span>
+        </div>
+      </div>
+
+      <input type="tel" placeholder="PRIMARY PHONE *" required>
+      <span class="error-message hidden">required field</span>
+      <div class="checkaddress">
+        <input type="checkbox" id="tick1" >
+        <label for="tick1"> Use This Address For Billing</label>
+      </div>
+
+    </form>
+    
+    <p><b>SHIPPING OPTIONS *</b></p>
+    <form class="form2">
+
+      <input type="radio" id="option1" name="shipping" required >
+      <label for="option1"><b>STANDARD SHIPPING($8.00)</b></label><br>
+      <p>Estimated delivery for in-stock item(s):06/17/25</p>
+      <p>(Shipping date(s) are estimates.)</p>
+
+      <input type="radio" id="option2" name="shipping" required >
+      <label for="option2"><b>2-3 DAY SHIPPING($23.00)</b></label><br>
+      <p>Estimated delivery for in-stock item(s):06/13/25</p><br>
+
+      <input type="radio" id="option3" name="shipping"  required >
+      <label for="option3"><b>OVERNIGHT SHIPPING($28.00)</b></label><br>
+      <p>Estimated delivery for in-stock item(s):06/11/25</p><br>
+
+    </form>
+    <p>Want it in store? Update your delivery method in <a href="#">shopping bag</a> to Free Pick Up in Store.</p>
+</div>
+
+
+<div class="continuepay">
+      <button class="continuepaybtn">CONTINUE TO PAYMENT</button>
+</div>
+</div>
+
+</div>
+
+<!-- ///////////////////////////////////////////////..2..////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<hr>
+<div class="secondblock">
+  <div class="payment">
+    <li><p>Payment</p></li>
+  </div>
+  <div class="have2hide2 hidden">
+    <div class="border">
+      <hr class="linebelowborder">
+    <p>Payment Method</p>
+
+
+    <form class="form3">
+
+      <input type="radio" id="option1-method" name="method">
+      <label for="option1-method">
+        <i class="fa-regular fa-credit-card"></i>
+        <span>Torrid Credit Card</span>
+      </label><br>
+      <div class="torrid-detail hidden">
+          <input type="text" placeholder="NAME ON CARD *" required2><span class="error-message hidden">required field</span><br>
+          <span class="error-message hidden">required field</span>
+          <input type="number" placeholder="CARD NUMBER(NO DASHES) *" required2>
+          <span class="error-message hidden">required field</span>
+      </div>
+
+
+      <input type="radio" id="option2-method" name="method">
+      <label for="option2-method">
+        <i class="fa-regular fa-credit-card"></i>
+        <span>Credit Card</span>
+      </label><br>
+      <div class="credit-detail hidden">
+          <label class="label-for-credit">NAME ON CARD <span class="red">*</span></label><br>
+          <input type="text" placeholder="" required3>
+          <span class="error-message hidden">required field</span><br>
+          <label class="label-for-credit">CARD NUMBER(NO DASHES) <span class="red">*</span></label><br>
+          <input type="number" placeholder="" required3>
+          <span class="error-message hidden">required field</span><br>
+          <div class="forflex">
+            <div class="wrap-with-head">
+              <label class="label-for-credit">EXPIRATION MM/YY <span class="red">*</span></label><br>
+               <div class="needspace">
+                <input  type="text" placeholder="" required3>
+              <span class="error-message hidden">required field</span><br>
+            </div>
+            </div>
+            <div class="wrap-with-head">
+              <label class="label-for-credit">CVV <span class="red">*</span></label><br>
+              <div class="needspace">
+                <input type="text" placeholder="CVV *" required3>
+                <span class="error-message hidden">required field</span><br>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+
+
+
+      <input type="radio" id="option3-method" name="method" >
+      <label for="option3-method">
+        <i class="fa-regular fa-credit-card"></i>
+        <span>PayPal</span>
+      </label><br>
+
+      <input type="radio" id="option4-method" name="method" >
+      <label for="option4-method">
+        <i class="fa-regular fa-credit-card"></i>
+        <span>Pay Later</span>
+      </label><br>
+    </form>
+
+
+    </div>
+  
+
+<div class="continuereview">
+      <button class="continuereviewbtn">CONTINUE TO REVIEW</button>
+</div>
+</div>
+</div>
+<hr>
+<!-- /////////////////////////////////////////////..3..////////////////////////////////////////////// -->
+
+<div class="thirdblock">
+  <div class="review">
+    <li><p>Order Review</p></li>
+  </div>
+  <div class="have2hide3 hidden">
+    <div class="order-review" >
+    <h2 >Order Review</h2>
+
+    <!-- Order Items -->
+    <div class="order-items">
+      <div class="order-item">
+        <span>Product Name 1 (Qty: 1)</span>
+        <span>$25.00</span>
+      </div>
+      <div class="order-item" >
+        <span>Product Name 2 (Qty: 2)</span>
+        <span>$50.00</span>
+      </div>
+    </div>
+
+    <hr >
+
+  <!-- Price Summary -->
+    <div class="price-summary">
+      <div class="summary-row" >
+        <b>Subtotal</b>
+        <span>$75.00</span>
+      </div>
+      <div class="summary-row" >
+        <b>Shipping</b>
+        <span>$5.00</span>
+      </div>
+      <div class="summary-row-total" >
+        <b>Total</b>
+        <span>$80.00</span>
+      </div>
+    </div>
+</div>
+<div class="placeorder">
+      <button class="placeorderbtn">PLACE ORDER</button>
+</div>
+  </div>
+  
+</div>
+<hr>
+</ol>
+<p class="lastline">PLEASE CONFIRM YOUR ACTION BELOW</p>
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/script.js"></script> 
+</body>
+</html>

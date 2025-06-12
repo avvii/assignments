@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper', {
   speed: 800,
   breakpoints: {
@@ -20,5 +21,19 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.nextbtn',
     prevEl: '.prevbtn'
+  },
+  pagination: {
+    el: '.swiper-pagination',  
+    type: 'progressbar'           
   }
+});
+
+
+///////////////////////////////////
+$(document).ready(function () {
+  $('.changeimg').click(function () {
+    $('.swiper-slide img').first().attr('src', '../image/image2.jpg');
+    $('.swiper-slide p').first().text("changed image");
+    });
+    console.log("hi");
 });

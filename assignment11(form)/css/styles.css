@@ -1,0 +1,184 @@
+.hidden{
+  display:none;
+}
+input[type="text"],input[type="number"],input[type="tel"],select{
+  width:100%;
+  padding:10px;
+  margin:10px;
+  margin-left:4px;
+}
+.red{
+  color:red;
+}
+.redborder{
+  border:1px solid red;
+}
+.border{
+  background: white;
+  border: 1px solid #ccc;
+  padding:0.2rem 35rem 0.2rem 2rem;
+}
+.form1{
+   padding:0 0 0 4rem;
+}
+.continuepay,.continuereview,.placeorder{
+  display: flex;
+  justify-content: center;
+  padding:1rem;
+}
+.continuepaybtn, .continuereviewbtn , .placeorderbtn{
+  background: #888;
+  border:none;
+  color:white;
+  padding:0.5rem 2.5rem;
+  border-radius: 0.3rem;
+}
+/* ////////////////////////////////////////// */
+.secondline{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: -20px;
+
+}
+.fa-truck{
+  padding-right: 10px;
+}
+.shipping{
+  font-size: 20px;
+}
+.ship-to{
+  font-size: 15px;
+}
+/* //////////////////////////////////////////////////////..1../////////////////////////////////////////////////////// */
+
+.main {
+      list-style: none; 
+      counter-reset: item;
+      padding-left: 0;
+    }
+
+    .main li {
+      counter-increment: item;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 40px; 
+      padding-top:-5rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .main li::before{
+      content: counter(item);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      background-color: #888;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-top: -3px;;
+    }
+    /* This affects the pseudo-element via the class */
+.custom-bullet::before {
+  background-color: rgba(247, 43, 142, 0.655) !important;
+}
+
+
+.show-address{
+  font-size: 13px;
+  text-decoration:underline;
+  color:blue;
+  cursor: pointer;
+}
+.line1{
+  width:106.5%;
+}
+.line3,.line4{
+  width:104%;
+}
+.state,.country{
+  color: #888;
+}
+
+
+
+
+
+
+
+
+.continuepaybtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* ////////////////////////..2nd..////////////////////////////// */
+
+.linebelowborder{
+  margin-top:10px;
+  background-color:black;
+  height: 0.01px;
+  width:180%;
+  
+}
+.label-for-credit{
+  font-size: 14px;
+  color:#737272;
+}
+.forflex{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.needspace{
+   /* margin:20px; */
+   width:19rem;;
+}
+.continuereviewbtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+    .lastline{
+      margin-left:20px;
+      font-size: 11px;
+      color:#4a4a4a;
+      /* cursor: pointer; */
+    }
+    .order-review{
+      padding: 20px; border: 1px solid #ccc; margin-top: 30px;
+    }
+    h2{
+      margin-bottom: 15px;
+    }
+    .order-item{
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 10px;
+    }
+
+    .summary-row{
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 5px;
+    }
+    .summary-row-total{
+      display: flex; 
+      justify-content: space-between; 
+      font-weight: bold; 
+    }
+
+
+
+
+    .error-message {
+  color: red;
+  font-size: 12px;
+  /* display: none; */
+  margin-left: 4px;
+}
