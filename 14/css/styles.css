@@ -238,64 +238,12 @@ p{
 }
 }
 
-/* .image2page{
-  width: 300px; 
-  height:auto;
-}
+
 .image2page:hover {
   content: url('https://nb.scene7.com/is/image/NB/wt51650nnny_nb_71_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880');
-} */
-
-
-.i1,
-.i2 {
-  /* position: absolute; */
-  width: 300px;
-  /* transition: opacity 0.3s ease-in-out; */
 }
 
-  .page2 {
-    padding: 20px;
-  }
 
-  .imagebox2 {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-  }
-
-  .cloth-image {
-    position: relative;
-    width: 250px; 
-    height: 250px;
-    padding:0 1.5rem;
-  }
-
-  /* .cloth-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  } */
-  .cloth-image .i2{
-    opacity: 0;
-    pointer-events: none;
-  }
-  .i1:hover .i2{
-    opacity: 1;
-  }
-  .i1:hover .i1 {
-    opacity: 0;
-  }
-  .imgs-wrap{
-    width:250px;
-    margin:10px 0;
-  }
-  .img4{
-    width: 2.5rem;
-    height:2.5rem;
-  }
 
 @media screen and (min-width: 768px) {
   .menu-item {

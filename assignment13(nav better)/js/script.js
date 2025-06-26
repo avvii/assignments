@@ -9,7 +9,6 @@ if ($(window).width() < 767) {
     $(".boxes").show();
     $(".bar-page").slideDown(500);
   });
-
   $('.boxes .main-new-box').on('click', function () {
     const id = $(this).attr('id'); 
     const pageClass = '.' + id + '-page';    
@@ -65,7 +64,36 @@ $('.allclose').hover(
   function () {
     $(this).hide();         
     $('.after').removeClass('hidden');
-  }
-);
+  });
+
+
+
+    $('.img4').on('click', function () {
+      const newSrc = $(this).attr('src').replace(/wid=\d+&hei=\d+/, 'wid=880&hei=880');
+      $(this).closest('.cloth-image').find('.i1').attr('src', newSrc);
+    });
+ 
+
+
+
+
+
+  // $('.add').click(function () {
+  //   $('.add').hide(); 
+  //   $('.loader').show(); 
+  //   setTimeout(function () {
+  //     $('<div>').load('diffimg.html', function () {
+  //       const slides = $(this).find('.slide');
+  //       $('.allimages').append(slides);
+  //       const newImgWidth = $('.slide img:first').width();
+  //       $('.slide img').css('width', newImgWidth);
+  //       const imgH = $('.slide img:first').height();
+  //       $('.slide img').css('height', imgH);
+  //       $('.loader').hide(); 
+  //       $('.add').show();
+  //     });
+  //   }, 2000); 
+  // });
+
 }
 });
