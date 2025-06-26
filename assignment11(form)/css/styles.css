@@ -1,17 +1,21 @@
-.hidden{
-  display:none;
+.hidden {
+  display: none ;
 }
-input[type="text"],input[type="number"],input[type="tel"],select{
+
+input[type="text"],input[type="tel"],select{
   width:100%;
   padding:10px;
-  margin:10px;
-  margin-left:4px;
+  /* margin:10px; */
+  /* margin-left:4px; */
+   margin: 4px 40px; 
+   /* border: 0.1px solid #888; */
+    box-sizing: border-box;  
 }
 .red{
   color:red;
 }
 .redborder{
-  border:1px solid red;
+  border-color: red;
 }
 .border{
   background: white;
@@ -50,6 +54,23 @@ input[type="text"],input[type="number"],input[type="tel"],select{
 .ship-to{
   font-size: 15px;
 }
+.forflex{
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.wrap-error{
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+
+}
+.wrap-error2{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
 /* //////////////////////////////////////////////////////..1../////////////////////////////////////////////////////// */
 
 .main {
@@ -83,11 +104,9 @@ input[type="text"],input[type="number"],input[type="tel"],select{
       font-weight: bold;
       margin-top: -3px;;
     }
-    /* This affects the pseudo-element via the class */
 .custom-bullet::before {
   background-color: rgba(247, 43, 142, 0.655) !important;
 }
-
 
 .show-address{
   font-size: 13px;
@@ -96,26 +115,50 @@ input[type="text"],input[type="number"],input[type="tel"],select{
   cursor: pointer;
 }
 .line1{
-  width:106.5%;
+  width:100%;
 }
 .line3,.line4{
   width:104%;
 }
-.state,.country{
-  color: #888;
+#first-name,#last-name{
+  width:100%;
 }
 
-
-
-
-
-
-
-
-.continuepaybtn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.wrap-error {
+  margin: 0; 
 }
+/* #city{
+  width:130%;
+   margin: 4px 100px 4px 40px; 
+}
+#zip{
+  margin: 4px 170px 4px 40px; 
+}
+ .statecustom{
+  width:80%;
+  margin:0px 10px 0px 0px;
+ }
+ .countrycustom{
+  margin:0px 4px 0px 9px;
+ } */
+  #city,
+#zip {
+  width: 130%;
+  margin: 4px  40px 4px  40px;
+  box-sizing: border-box;
+}
+.wrap-error2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.statecustom,
+.countrycustom {
+  flex: 1;
+  width:58%;
+  margin: 4px 20px 4px 140px;
+}
+
 /* ////////////////////////..2nd..////////////////////////////// */
 
 .linebelowborder{
@@ -129,19 +172,14 @@ input[type="text"],input[type="number"],input[type="tel"],select{
   font-size: 14px;
   color:#737272;
 }
-.forflex{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
+
 .needspace{
    /* margin:20px; */
    width:19rem;;
 }
 .continuereviewbtn:disabled {
   background-color: #ccc;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 /* ///////////////////////////////////////////////////////////////////////// */
     .lastline{
@@ -173,12 +211,96 @@ input[type="text"],input[type="number"],input[type="tel"],select{
       font-weight: bold; 
     }
 
-
-
-
-    .error-message {
+    .error-message,.error-message-size,.error-message-alpha ,.common-error-message,.error-message-radio{
   color: red;
   font-size: 12px;
   /* display: none; */
-  margin-left: 4px;
+  margin-left: 40px;
+}
+.error-drop{
+    margin-left: 140px;
+}
+
+
+
+
+
+/* custom dropdown */
+.custom-select {
+  position: relative;
+}
+.select-selected {
+  background-color: white;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 10px;
+  border: 6px solid transparent;
+  border-color: #6b6a6a transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #6b6a6a transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  color:#888;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  border: 0.1px solid #888;
+  border-radius: 2px;;
+}
+.select-items div{
+  color:#000;
+}
+.select-items {
+  position: absolute;
+  background-color: #adacac;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+ .redborder{
+  border: 0.1px solid red;
+}
+
+
+
+
+
+/* radio custom */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.custom-radio.redborder {
+  border-color: red;
+}
+
+.custom-radio:checked::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1.33px;
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
 }

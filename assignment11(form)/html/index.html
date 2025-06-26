@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     
-    <link rel="stylesheet"
-        href="/resources/demos/style.css">
+    
 </head> 
 <body>
   <ol class="main">
@@ -28,6 +27,7 @@
         <p class="ship-to"><b>SHIPPING TO</b></p>
       </div>
     </div>
+    <div class="common-error-message hidden" >Please fill in all required fields correctly.</div>
 
     <div class="top-right">
       <img src="" class="myitem">
@@ -36,31 +36,40 @@
     <form class="form1">
     <!--  -->
       <div class="line1 forflex">
-        <!-- <div class="req"> -->
-          <input type="text" placeholder="FIRST NAME *" id="first-name" class="blah" required>
+        <div class="wrap-error">
+          <input type="text" placeholder="FIRST NAME *" id="first-name" class="blahh" maxlength="15" required>
           <span class="error-message hidden">required field</span>
-          <!-- <p id="first-name-error" class="error-message hidden">required field</p> -->
-        <!-- </div> -->
-        <!-- <div class="req"> -->
-          <input type="text" placeholder="LAST NAME *" id="last-name" class="blah" required>
+          <span class="error-message-size hidden">too long</span>
+          <span class="error-message-alpha hidden">only alphabets</span>
+        </div>
+        <div class="wrap-error">
+          <input type="text" placeholder="LAST NAME *" id="last-name" class="blahh"  maxlength="15"  required>
           <span class="error-message hidden">required field</span>
+          <span class="error-message-size hidden">too long</span>
+          <span class="error-message-alpha hidden">only alphabets</span>
           <!-- <p id="last-name-error" class="error-message hidden">This field is required</p> -->
-        <!-- </div> -->
+        </div>
       </div>
     <!--  -->
       <!-- <div class="req"> -->
-         <input type="text" placeholder="ADDRESS LINE 1 *" class="blah" required>
+         <input type="text" placeholder="ADDRESS LINE 1 *" class="blah" id="address"  maxlength="25" required>
          <span class="error-message hidden">required field</span>
+         <span class="error-message-size hidden">too long</span>
       <!-- </div> -->
        <p class="show-address">+ Add Address Line 2</p>
        <input type="text" placeholder="ADDRESS LINE 2 " class="hidden-address hidden">
        <div class="line3 forflex">
-          <input type="text" placeholder="CITY *" required>
+        <div class="wrap-error2">
+          <input type="text" placeholder="CITY *" id="city" maxlength="15"  required>
           <span class="error-message hidden">required field</span>
-          <div class="custom-select" style="width:200px;">
-          <select id="state" name="STATE" class="state" required>
-            <span class="error-message"></span>
-            <option value="" disabled selected >STATE *</option>
+          <span class="error-message-size hidden">too long</span>
+          <span class="error-message-alpha hidden">only alphabets</span>
+       </div>
+          <div class="wrap-error2">
+          <div class="custom-select statecustom" >
+          <select class="state" required>
+            <!-- <span class="error-message"></span> -->
+            <option value="0" disabled selected>STATE *</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
             <option value="Assam">Assam</option>
@@ -90,16 +99,22 @@
             <option value="Uttarakhand">Uttarakhand</option>
             <option value="West Bengal">West Bengal</option>
           </select>
-          <span class="error-message hidden">required field</span>
         </div>
+        <span class="error-message error-drop hidden">required field</span>
       </div>
+       </div>
 
       <div class="line4 forflex">
-          <input type="number" placeholder="ZIP CODE *" required>
+        <div class="wrap-error2">
+          <input type="text" placeholder="ZIP CODE *" id="zip"  maxlength="5"  required>
           <span class="error-message hidden">required field</span>
-          <div class="custom-select" style="width:200px;">
+          <span class="error-message-size hidden">5 digit length</span>
+          <span class="error-message-alpha hidden">only digits</span>
+      </div>
+      <div class="wrap-error2">
+          <div class="custom-select countrycustom" >
           <select class="country" name="country" required>
-            <option value="" disabled selected>COUNTRY *</option>
+            <option value="" disabled selected >COUNTRY *</option>
             <option value="Andhra Pradesh">Afghanistan</option>
             <option value="Arunachal Pradesh">Albania</option>
             <option value="Assam">Algeria</option>
@@ -127,47 +142,47 @@
             <option value="Kerala">Korea</option>
             <option value="Madhya Pradesh">Malaysia</option>
           </select>
-          <span class="error-message hidden">required field</span>
         </div>
+        <span class="error-message error-drop hidden">required field</span>
+      </div>
       </div>
 
-      <input type="tel" placeholder="PRIMARY PHONE *" required>
+      <input type="tel" placeholder="PRIMARY PHONE *" id="phone" maxlength="10" required>
       <span class="error-message hidden">required field</span>
+      <span class="error-message-size hidden">10 digit length</span>
+      <span class="error-message-alpha hidden">only digits</span>
       <div class="checkaddress">
         <input type="checkbox" id="tick1" >
         <label for="tick1"> Use This Address For Billing</label>
       </div>
+                
 
     </form>
     
-    <p><b>SHIPPING OPTIONS *</b></p>
+    <p><b>SHIPPING OPTIONS *</b>
+    <br>
+  <span class="error-message-radio hidden" style="margin-left:140px;">required field</span></p>
     <form class="form2">
-
-      <input type="radio" id="option1" name="shipping" required >
-      <label for="option1"><b>STANDARD SHIPPING($8.00)</b></label><br>
+      <input type="radio" id="option1" name="shipping" class="custom-radio" required >
+      <label for="option1" ><b>STANDARD SHIPPING($8.00)</b></label><br>
       <p>Estimated delivery for in-stock item(s):06/17/25</p>
       <p>(Shipping date(s) are estimates.)</p>
 
-      <input type="radio" id="option2" name="shipping" required >
+      <input type="radio" id="option2" name="shipping" class="custom-radio" required >
       <label for="option2"><b>2-3 DAY SHIPPING($23.00)</b></label><br>
       <p>Estimated delivery for in-stock item(s):06/13/25</p><br>
 
-      <input type="radio" id="option3" name="shipping"  required >
+      <input type="radio" id="option3" name="shipping"  class="custom-radio" required >
       <label for="option3"><b>OVERNIGHT SHIPPING($28.00)</b></label><br>
-      <p>Estimated delivery for in-stock item(s):06/11/25</p><br>
-
+      <p style=" margin-bottom: -5px;">Estimated delivery for in-stock item(s):06/11/25</p>
     </form>
     <p>Want it in store? Update your delivery method in <a href="#">shopping bag</a> to Free Pick Up in Store.</p>
 </div>
-
-
 <div class="continuepay">
       <button class="continuepaybtn">CONTINUE TO PAYMENT</button>
 </div>
 </div>
-
 </div>
-
 <!-- ///////////////////////////////////////////////..2..////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <hr>
@@ -191,7 +206,7 @@
       <div class="torrid-detail hidden">
           <input type="text" placeholder="NAME ON CARD *" required2><span class="error-message hidden">required field</span><br>
           <span class="error-message hidden">required field</span>
-          <input type="number" placeholder="CARD NUMBER(NO DASHES) *" required2>
+          <input type="text" placeholder="CARD NUMBER(NO DASHES) *" required2>
           <span class="error-message hidden">required field</span>
       </div>
 
@@ -206,7 +221,7 @@
           <input type="text" placeholder="" required3>
           <span class="error-message hidden">required field</span><br>
           <label class="label-for-credit">CARD NUMBER(NO DASHES) <span class="red">*</span></label><br>
-          <input type="number" placeholder="" required3>
+          <input type="text" placeholder="" required3>
           <span class="error-message hidden">required field</span><br>
           <div class="forflex">
             <div class="wrap-with-head">
@@ -224,7 +239,6 @@
               </div>
             </div>
           </div>
-
       </div>
 
 
@@ -242,11 +256,7 @@
         <span>Pay Later</span>
       </label><br>
     </form>
-
-
     </div>
-  
-
 <div class="continuereview">
       <button class="continuereviewbtn">CONTINUE TO REVIEW</button>
 </div>
@@ -274,7 +284,6 @@
         <span>$50.00</span>
       </div>
     </div>
-
     <hr >
 
   <!-- Price Summary -->
@@ -304,6 +313,7 @@
 <p class="lastline">PLEASE CONFIRM YOUR ACTION BELOW</p>
      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js"></script> 
 </body>
 </html>
